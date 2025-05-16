@@ -1,0 +1,8 @@
+{
+    "Codegeex.RepoIndex": true,
+    "files.associations": {
+        "memory": "cpp",
+        "atomic": "cpp",
+        "functional": "cpp"
+    }
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libModuo.a CMakeFiles/Moduo.dir/logger.cc.o CMakeFiles/Moduo.dir/Timestamp.cc.o
+/usr/bin/ranlib ../../lib/libModuo.a

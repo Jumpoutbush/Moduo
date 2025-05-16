@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "../lib/libModuo.pdb"
+  "../lib/libModuo.so"
+  "CMakeFiles/Moduo.dir/src/Acceptor.cc.o"
+  "CMakeFiles/Moduo.dir/src/Acceptor.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/Buffer.cc.o"
+  "CMakeFiles/Moduo.dir/src/Buffer.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/Channel.cc.o"
+  "CMakeFiles/Moduo.dir/src/Channel.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/CurrentThread.cc.o"
+  "CMakeFiles/Moduo.dir/src/CurrentThread.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/DefaultPoller.cc.o"
+  "CMakeFiles/Moduo.dir/src/DefaultPoller.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/EPollPoller.cc.o"
+  "CMakeFiles/Moduo.dir/src/EPollPoller.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/EventLoop.cc.o"
+  "CMakeFiles/Moduo.dir/src/EventLoop.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/EventLoopThread.cc.o"
+  "CMakeFiles/Moduo.dir/src/EventLoopThread.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/EventLoopThreadPool.cc.o"
+  "CMakeFiles/Moduo.dir/src/EventLoopThreadPool.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/InetAddress.cc.o"
+  "CMakeFiles/Moduo.dir/src/InetAddress.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/Logger.cc.o"
+  "CMakeFiles/Moduo.dir/src/Logger.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/Poller.cc.o"
+  "CMakeFiles/Moduo.dir/src/Poller.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/Socket.cc.o"
+  "CMakeFiles/Moduo.dir/src/Socket.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/TcpConnection.cc.o"
+  "CMakeFiles/Moduo.dir/src/TcpConnection.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/TcpServer.cc.o"
+  "CMakeFiles/Moduo.dir/src/TcpServer.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/Thread.cc.o"
+  "CMakeFiles/Moduo.dir/src/Thread.cc.o.d"
+  "CMakeFiles/Moduo.dir/src/Timestamp.cc.o"
+  "CMakeFiles/Moduo.dir/src/Timestamp.cc.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/Moduo.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
