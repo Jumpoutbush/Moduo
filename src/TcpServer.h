@@ -8,6 +8,7 @@
 #include "InetAddress.h"
 #include "Logger.h"
 #include "noncopyable.h"
+#include "TcpConnection.h"
 
 #include <atomic>
 #include <functional>
@@ -16,13 +17,18 @@ class TcpServer : noncopyable
 {
 public:
     using ThreadInitCallback = std::function<void(EventLoop*)>;
-
+private:
+    ConnectionCallback connectionCallback_; // newConnection
+    MessageCallback messageCallback_;       // onMessage
+    ThreadInitCallback threadInitCallback_; // new thread
+    WriteCompleteCallback writeCompleteCallback_;   // onWriteComplete
+public:
     enum Option
     {
         kNoReusePort,
         kReusePort,
     };
-    explicit TcpServer(
+    TcpServer(
         EventLoop* loop,
         const InetAddress& listenAddr,
         const std::string& nameArg,
@@ -70,11 +76,6 @@ private:
     const std::string name_;
     std::unique_ptr<Acceptor> acceptor_;
     std::shared_ptr<EventLoopThreadPool> threadPool_;
-
-    ConnectionCallback connectionCallback_; // newConnection
-    MessageCallback messageCallback_;       // onMessage
-    ThreadInitCallback threadInitCallback_; // new thread
-    WriteCompleteCallback writeCompleteCallback_;   // onWriteComplete
 
     std::atomic_int started_;
     int nextConnId_;

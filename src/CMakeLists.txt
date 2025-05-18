@@ -18,5 +18,8 @@ set(SRC_LIST
     Thread.cc
     Timestamp.cc
     )
-add_library(Moduo ${SRC_LIST})
+add_library(Moduo SHARED ${SRC_LIST})
+
 target_link_libraries(Moduo)
+
+target_include_directories(Moduo PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

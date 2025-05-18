@@ -2,6 +2,7 @@
 #include <netinet/tcp.h>
 #include <sys/socket.h>
 #include <sys/types.h>
+#include <assert.h>
 #include <unistd.h>
 
 Socket::~Socket()
@@ -26,13 +27,17 @@ void Socket::listen()
 int Socket::accept(InetAddress* peeraddr)
 {
     sockaddr_in addr;
-    socklen_t len;
+    socklen_t len = sizeof addr;
     bzero(&addr, sizeof addr);
-    int connfd = ::accept(sockfd_, (sockaddr*)&addr, &len);
-    if(connfd >= 0)
+    int connfd = ::accept4(sockfd_, (sockaddr*)&addr, &len, SOCK_NONBLOCK | SOCK_CLOEXEC);
+    if (connfd < 0) 
     {
-        peeraddr->setSockAddr(addr);
+        int err = errno;
+        LOG_ERROR("Socket::accept failed: errno=%d (%s)", err, strerror(err));
+        return -1;
     }
+    peeraddr->setSockAddr(addr);
+    LOG_INFO("Socket::accept succeeded: connfd=%d", connfd);
     return connfd;
 }
 void Socket::shutdownWrite()

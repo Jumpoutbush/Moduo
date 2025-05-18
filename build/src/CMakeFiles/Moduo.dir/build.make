@@ -69,52 +69,291 @@ include src/CMakeFiles/Moduo.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/Moduo.dir/flags.make
 
-src/CMakeFiles/Moduo.dir/logger.cc.o: src/CMakeFiles/Moduo.dir/flags.make
-src/CMakeFiles/Moduo.dir/logger.cc.o: ../src/logger.cc
-src/CMakeFiles/Moduo.dir/logger.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Moduo.dir/logger.cc.o"
-	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/logger.cc.o -MF CMakeFiles/Moduo.dir/logger.cc.o.d -o CMakeFiles/Moduo.dir/logger.cc.o -c /home/yyc/wkspace/Moduo/src/logger.cc
+src/CMakeFiles/Moduo.dir/Acceptor.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/Acceptor.cc.o: ../src/Acceptor.cc
+src/CMakeFiles/Moduo.dir/Acceptor.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Moduo.dir/Acceptor.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/Acceptor.cc.o -MF CMakeFiles/Moduo.dir/Acceptor.cc.o.d -o CMakeFiles/Moduo.dir/Acceptor.cc.o -c /home/yyc/wkspace/Moduo/src/Acceptor.cc
 
-src/CMakeFiles/Moduo.dir/logger.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/logger.cc.i"
-	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/logger.cc > CMakeFiles/Moduo.dir/logger.cc.i
+src/CMakeFiles/Moduo.dir/Acceptor.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/Acceptor.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/Acceptor.cc > CMakeFiles/Moduo.dir/Acceptor.cc.i
 
-src/CMakeFiles/Moduo.dir/logger.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/logger.cc.s"
-	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/logger.cc -o CMakeFiles/Moduo.dir/logger.cc.s
+src/CMakeFiles/Moduo.dir/Acceptor.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/Acceptor.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/Acceptor.cc -o CMakeFiles/Moduo.dir/Acceptor.cc.s
+
+src/CMakeFiles/Moduo.dir/Buffer.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/Buffer.cc.o: ../src/Buffer.cc
+src/CMakeFiles/Moduo.dir/Buffer.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Moduo.dir/Buffer.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/Buffer.cc.o -MF CMakeFiles/Moduo.dir/Buffer.cc.o.d -o CMakeFiles/Moduo.dir/Buffer.cc.o -c /home/yyc/wkspace/Moduo/src/Buffer.cc
+
+src/CMakeFiles/Moduo.dir/Buffer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/Buffer.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/Buffer.cc > CMakeFiles/Moduo.dir/Buffer.cc.i
+
+src/CMakeFiles/Moduo.dir/Buffer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/Buffer.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/Buffer.cc -o CMakeFiles/Moduo.dir/Buffer.cc.s
+
+src/CMakeFiles/Moduo.dir/Channel.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/Channel.cc.o: ../src/Channel.cc
+src/CMakeFiles/Moduo.dir/Channel.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Moduo.dir/Channel.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/Channel.cc.o -MF CMakeFiles/Moduo.dir/Channel.cc.o.d -o CMakeFiles/Moduo.dir/Channel.cc.o -c /home/yyc/wkspace/Moduo/src/Channel.cc
+
+src/CMakeFiles/Moduo.dir/Channel.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/Channel.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/Channel.cc > CMakeFiles/Moduo.dir/Channel.cc.i
+
+src/CMakeFiles/Moduo.dir/Channel.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/Channel.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/Channel.cc -o CMakeFiles/Moduo.dir/Channel.cc.s
+
+src/CMakeFiles/Moduo.dir/CurrentThread.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/CurrentThread.cc.o: ../src/CurrentThread.cc
+src/CMakeFiles/Moduo.dir/CurrentThread.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/Moduo.dir/CurrentThread.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/CurrentThread.cc.o -MF CMakeFiles/Moduo.dir/CurrentThread.cc.o.d -o CMakeFiles/Moduo.dir/CurrentThread.cc.o -c /home/yyc/wkspace/Moduo/src/CurrentThread.cc
+
+src/CMakeFiles/Moduo.dir/CurrentThread.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/CurrentThread.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/CurrentThread.cc > CMakeFiles/Moduo.dir/CurrentThread.cc.i
+
+src/CMakeFiles/Moduo.dir/CurrentThread.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/CurrentThread.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/CurrentThread.cc -o CMakeFiles/Moduo.dir/CurrentThread.cc.s
+
+src/CMakeFiles/Moduo.dir/DefaultPoller.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/DefaultPoller.cc.o: ../src/DefaultPoller.cc
+src/CMakeFiles/Moduo.dir/DefaultPoller.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/Moduo.dir/DefaultPoller.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/DefaultPoller.cc.o -MF CMakeFiles/Moduo.dir/DefaultPoller.cc.o.d -o CMakeFiles/Moduo.dir/DefaultPoller.cc.o -c /home/yyc/wkspace/Moduo/src/DefaultPoller.cc
+
+src/CMakeFiles/Moduo.dir/DefaultPoller.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/DefaultPoller.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/DefaultPoller.cc > CMakeFiles/Moduo.dir/DefaultPoller.cc.i
+
+src/CMakeFiles/Moduo.dir/DefaultPoller.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/DefaultPoller.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/DefaultPoller.cc -o CMakeFiles/Moduo.dir/DefaultPoller.cc.s
+
+src/CMakeFiles/Moduo.dir/EPollPoller.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/EPollPoller.cc.o: ../src/EPollPoller.cc
+src/CMakeFiles/Moduo.dir/EPollPoller.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/Moduo.dir/EPollPoller.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/EPollPoller.cc.o -MF CMakeFiles/Moduo.dir/EPollPoller.cc.o.d -o CMakeFiles/Moduo.dir/EPollPoller.cc.o -c /home/yyc/wkspace/Moduo/src/EPollPoller.cc
+
+src/CMakeFiles/Moduo.dir/EPollPoller.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/EPollPoller.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/EPollPoller.cc > CMakeFiles/Moduo.dir/EPollPoller.cc.i
+
+src/CMakeFiles/Moduo.dir/EPollPoller.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/EPollPoller.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/EPollPoller.cc -o CMakeFiles/Moduo.dir/EPollPoller.cc.s
+
+src/CMakeFiles/Moduo.dir/EventLoop.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/EventLoop.cc.o: ../src/EventLoop.cc
+src/CMakeFiles/Moduo.dir/EventLoop.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/Moduo.dir/EventLoop.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/EventLoop.cc.o -MF CMakeFiles/Moduo.dir/EventLoop.cc.o.d -o CMakeFiles/Moduo.dir/EventLoop.cc.o -c /home/yyc/wkspace/Moduo/src/EventLoop.cc
+
+src/CMakeFiles/Moduo.dir/EventLoop.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/EventLoop.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/EventLoop.cc > CMakeFiles/Moduo.dir/EventLoop.cc.i
+
+src/CMakeFiles/Moduo.dir/EventLoop.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/EventLoop.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/EventLoop.cc -o CMakeFiles/Moduo.dir/EventLoop.cc.s
+
+src/CMakeFiles/Moduo.dir/EventLoopThread.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/EventLoopThread.cc.o: ../src/EventLoopThread.cc
+src/CMakeFiles/Moduo.dir/EventLoopThread.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/Moduo.dir/EventLoopThread.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/EventLoopThread.cc.o -MF CMakeFiles/Moduo.dir/EventLoopThread.cc.o.d -o CMakeFiles/Moduo.dir/EventLoopThread.cc.o -c /home/yyc/wkspace/Moduo/src/EventLoopThread.cc
+
+src/CMakeFiles/Moduo.dir/EventLoopThread.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/EventLoopThread.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/EventLoopThread.cc > CMakeFiles/Moduo.dir/EventLoopThread.cc.i
+
+src/CMakeFiles/Moduo.dir/EventLoopThread.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/EventLoopThread.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/EventLoopThread.cc -o CMakeFiles/Moduo.dir/EventLoopThread.cc.s
+
+src/CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.o: ../src/EventLoopThreadPool.cc
+src/CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.o -MF CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.o.d -o CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.o -c /home/yyc/wkspace/Moduo/src/EventLoopThreadPool.cc
+
+src/CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/EventLoopThreadPool.cc > CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.i
+
+src/CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/EventLoopThreadPool.cc -o CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.s
+
+src/CMakeFiles/Moduo.dir/InetAddress.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/InetAddress.cc.o: ../src/InetAddress.cc
+src/CMakeFiles/Moduo.dir/InetAddress.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/Moduo.dir/InetAddress.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/InetAddress.cc.o -MF CMakeFiles/Moduo.dir/InetAddress.cc.o.d -o CMakeFiles/Moduo.dir/InetAddress.cc.o -c /home/yyc/wkspace/Moduo/src/InetAddress.cc
+
+src/CMakeFiles/Moduo.dir/InetAddress.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/InetAddress.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/InetAddress.cc > CMakeFiles/Moduo.dir/InetAddress.cc.i
+
+src/CMakeFiles/Moduo.dir/InetAddress.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/InetAddress.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/InetAddress.cc -o CMakeFiles/Moduo.dir/InetAddress.cc.s
+
+src/CMakeFiles/Moduo.dir/Logger.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/Logger.cc.o: ../src/Logger.cc
+src/CMakeFiles/Moduo.dir/Logger.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/Moduo.dir/Logger.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/Logger.cc.o -MF CMakeFiles/Moduo.dir/Logger.cc.o.d -o CMakeFiles/Moduo.dir/Logger.cc.o -c /home/yyc/wkspace/Moduo/src/Logger.cc
+
+src/CMakeFiles/Moduo.dir/Logger.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/Logger.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/Logger.cc > CMakeFiles/Moduo.dir/Logger.cc.i
+
+src/CMakeFiles/Moduo.dir/Logger.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/Logger.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/Logger.cc -o CMakeFiles/Moduo.dir/Logger.cc.s
+
+src/CMakeFiles/Moduo.dir/Poller.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/Poller.cc.o: ../src/Poller.cc
+src/CMakeFiles/Moduo.dir/Poller.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/Moduo.dir/Poller.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/Poller.cc.o -MF CMakeFiles/Moduo.dir/Poller.cc.o.d -o CMakeFiles/Moduo.dir/Poller.cc.o -c /home/yyc/wkspace/Moduo/src/Poller.cc
+
+src/CMakeFiles/Moduo.dir/Poller.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/Poller.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/Poller.cc > CMakeFiles/Moduo.dir/Poller.cc.i
+
+src/CMakeFiles/Moduo.dir/Poller.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/Poller.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/Poller.cc -o CMakeFiles/Moduo.dir/Poller.cc.s
+
+src/CMakeFiles/Moduo.dir/Socket.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/Socket.cc.o: ../src/Socket.cc
+src/CMakeFiles/Moduo.dir/Socket.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/Moduo.dir/Socket.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/Socket.cc.o -MF CMakeFiles/Moduo.dir/Socket.cc.o.d -o CMakeFiles/Moduo.dir/Socket.cc.o -c /home/yyc/wkspace/Moduo/src/Socket.cc
+
+src/CMakeFiles/Moduo.dir/Socket.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/Socket.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/Socket.cc > CMakeFiles/Moduo.dir/Socket.cc.i
+
+src/CMakeFiles/Moduo.dir/Socket.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/Socket.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/Socket.cc -o CMakeFiles/Moduo.dir/Socket.cc.s
+
+src/CMakeFiles/Moduo.dir/TcpConnection.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/TcpConnection.cc.o: ../src/TcpConnection.cc
+src/CMakeFiles/Moduo.dir/TcpConnection.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/Moduo.dir/TcpConnection.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/TcpConnection.cc.o -MF CMakeFiles/Moduo.dir/TcpConnection.cc.o.d -o CMakeFiles/Moduo.dir/TcpConnection.cc.o -c /home/yyc/wkspace/Moduo/src/TcpConnection.cc
+
+src/CMakeFiles/Moduo.dir/TcpConnection.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/TcpConnection.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/TcpConnection.cc > CMakeFiles/Moduo.dir/TcpConnection.cc.i
+
+src/CMakeFiles/Moduo.dir/TcpConnection.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/TcpConnection.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/TcpConnection.cc -o CMakeFiles/Moduo.dir/TcpConnection.cc.s
+
+src/CMakeFiles/Moduo.dir/TcpServer.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/TcpServer.cc.o: ../src/TcpServer.cc
+src/CMakeFiles/Moduo.dir/TcpServer.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/Moduo.dir/TcpServer.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/TcpServer.cc.o -MF CMakeFiles/Moduo.dir/TcpServer.cc.o.d -o CMakeFiles/Moduo.dir/TcpServer.cc.o -c /home/yyc/wkspace/Moduo/src/TcpServer.cc
+
+src/CMakeFiles/Moduo.dir/TcpServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/TcpServer.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/TcpServer.cc > CMakeFiles/Moduo.dir/TcpServer.cc.i
+
+src/CMakeFiles/Moduo.dir/TcpServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/TcpServer.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/TcpServer.cc -o CMakeFiles/Moduo.dir/TcpServer.cc.s
+
+src/CMakeFiles/Moduo.dir/Thread.cc.o: src/CMakeFiles/Moduo.dir/flags.make
+src/CMakeFiles/Moduo.dir/Thread.cc.o: ../src/Thread.cc
+src/CMakeFiles/Moduo.dir/Thread.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/Moduo.dir/Thread.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/Thread.cc.o -MF CMakeFiles/Moduo.dir/Thread.cc.o.d -o CMakeFiles/Moduo.dir/Thread.cc.o -c /home/yyc/wkspace/Moduo/src/Thread.cc
+
+src/CMakeFiles/Moduo.dir/Thread.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/Thread.cc.i"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/Thread.cc > CMakeFiles/Moduo.dir/Thread.cc.i
+
+src/CMakeFiles/Moduo.dir/Thread.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/Thread.cc.s"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/Thread.cc -o CMakeFiles/Moduo.dir/Thread.cc.s
 
 src/CMakeFiles/Moduo.dir/Timestamp.cc.o: src/CMakeFiles/Moduo.dir/flags.make
 src/CMakeFiles/Moduo.dir/Timestamp.cc.o: ../src/Timestamp.cc
 src/CMakeFiles/Moduo.dir/Timestamp.cc.o: src/CMakeFiles/Moduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Moduo.dir/Timestamp.cc.o"
-	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/Timestamp.cc.o -MF CMakeFiles/Moduo.dir/Timestamp.cc.o.d -o CMakeFiles/Moduo.dir/Timestamp.cc.o -c /home/yyc/wkspace/Moduo/src/Timestamp.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/Moduo.dir/Timestamp.cc.o"
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Moduo.dir/Timestamp.cc.o -MF CMakeFiles/Moduo.dir/Timestamp.cc.o.d -o CMakeFiles/Moduo.dir/Timestamp.cc.o -c /home/yyc/wkspace/Moduo/src/Timestamp.cc
 
 src/CMakeFiles/Moduo.dir/Timestamp.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Moduo.dir/Timestamp.cc.i"
-	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/Timestamp.cc > CMakeFiles/Moduo.dir/Timestamp.cc.i
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yyc/wkspace/Moduo/src/Timestamp.cc > CMakeFiles/Moduo.dir/Timestamp.cc.i
 
 src/CMakeFiles/Moduo.dir/Timestamp.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Moduo.dir/Timestamp.cc.s"
-	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/Timestamp.cc -o CMakeFiles/Moduo.dir/Timestamp.cc.s
+	cd /home/yyc/wkspace/Moduo/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yyc/wkspace/Moduo/src/Timestamp.cc -o CMakeFiles/Moduo.dir/Timestamp.cc.s
 
 # Object files for target Moduo
 Moduo_OBJECTS = \
-"CMakeFiles/Moduo.dir/logger.cc.o" \
+"CMakeFiles/Moduo.dir/Acceptor.cc.o" \
+"CMakeFiles/Moduo.dir/Buffer.cc.o" \
+"CMakeFiles/Moduo.dir/Channel.cc.o" \
+"CMakeFiles/Moduo.dir/CurrentThread.cc.o" \
+"CMakeFiles/Moduo.dir/DefaultPoller.cc.o" \
+"CMakeFiles/Moduo.dir/EPollPoller.cc.o" \
+"CMakeFiles/Moduo.dir/EventLoop.cc.o" \
+"CMakeFiles/Moduo.dir/EventLoopThread.cc.o" \
+"CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.o" \
+"CMakeFiles/Moduo.dir/InetAddress.cc.o" \
+"CMakeFiles/Moduo.dir/Logger.cc.o" \
+"CMakeFiles/Moduo.dir/Poller.cc.o" \
+"CMakeFiles/Moduo.dir/Socket.cc.o" \
+"CMakeFiles/Moduo.dir/TcpConnection.cc.o" \
+"CMakeFiles/Moduo.dir/TcpServer.cc.o" \
+"CMakeFiles/Moduo.dir/Thread.cc.o" \
 "CMakeFiles/Moduo.dir/Timestamp.cc.o"
 
 # External object files for target Moduo
 Moduo_EXTERNAL_OBJECTS =
 
-../lib/libModuo.a: src/CMakeFiles/Moduo.dir/logger.cc.o
-../lib/libModuo.a: src/CMakeFiles/Moduo.dir/Timestamp.cc.o
-../lib/libModuo.a: src/CMakeFiles/Moduo.dir/build.make
-../lib/libModuo.a: src/CMakeFiles/Moduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../lib/libModuo.a"
-	cd /home/yyc/wkspace/Moduo/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Moduo.dir/cmake_clean_target.cmake
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/Acceptor.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/Buffer.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/Channel.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/CurrentThread.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/DefaultPoller.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/EPollPoller.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/EventLoop.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/EventLoopThread.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/EventLoopThreadPool.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/InetAddress.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/Logger.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/Poller.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/Socket.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/TcpConnection.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/TcpServer.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/Thread.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/Timestamp.cc.o
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/build.make
+../lib/libModuo.so: src/CMakeFiles/Moduo.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yyc/wkspace/Moduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library ../../lib/libModuo.so"
 	cd /home/yyc/wkspace/Moduo/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Moduo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/CMakeFiles/Moduo.dir/build: ../lib/libModuo.a
+src/CMakeFiles/Moduo.dir/build: ../lib/libModuo.so
 .PHONY : src/CMakeFiles/Moduo.dir/build
 
 src/CMakeFiles/Moduo.dir/clean:

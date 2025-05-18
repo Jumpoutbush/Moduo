@@ -1,7 +1,7 @@
 #pragma once
 
-#include "noncopyable.h"
 #include "Callbacks.h"
+#include "noncopyable.h"
 #include "Buffer.h"
 #include "InetAddress.h"
 #include "Timestamp.h"
@@ -21,8 +21,15 @@ class Socket;
  */
 class TcpConnection : noncopyable, public std::enable_shared_from_this<TcpConnection>
 {
+private:
+    ConnectionCallback connectionCallback_;
+    MessageCallback messageCallback_;       // onMessage
+    WriteCompleteCallback writeCompleteCallback_;   // onWriteComplete
+    HighWaterMarkCallback highWaterMarkCallback_;   // onHighWaterMark
+    CloseCallback closeCallback_;           // onClose
+
 public:
-    explicit TcpConnection(EventLoop* loop, const std::string& name, int sockfd, const InetAddress& localAddr, const InetAddress& peerAddr);
+    TcpConnection(EventLoop* loop, const std::string& name, int sockfd, const InetAddress& localAddr, const InetAddress& peerAddr);
     ~TcpConnection();
 
     EventLoop* getLoop() const { return loop_; }
@@ -30,7 +37,7 @@ public:
     const InetAddress& localAddress() const { return localAddr_; }
     const InetAddress& peerAddress() const { return peerAddr_; }
     bool connected() const { return state_ == kConnected; }
-    void send(const void* message, size_t len);
+    void send(const std::string& buf);
     void shutdown();
 
     // set callback
@@ -57,6 +64,7 @@ public:
 
 private:
     enum StateE {kDisconnected, kConnecting, kConnected, kDisconnecting};
+    void setState(StateE s) { state_ = s; }
     void handleRead(Timestamp receiveTime);
     void handleWrite();
     void handleClose();
@@ -74,12 +82,6 @@ private:
 
     const InetAddress localAddr_;   // 当前主机
     const InetAddress peerAddr_;    // 客户端主机
-
-    ConnectionCallback connectionCallback_;
-    MessageCallback messageCallback_;       // onMessage
-    WriteCompleteCallback writeCompleteCallback_;   // onWriteComplete
-    HighWaterMarkCallback highWaterMarkCallback_;    // onHighWaterMark
-    CloseCallback closeCallback_;     // onClose
 
     size_t highWaterMark_;
     Buffer inputBuffer_;

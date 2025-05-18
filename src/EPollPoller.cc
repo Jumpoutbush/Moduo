@@ -59,28 +59,6 @@ Timestamp EPollPoller::poll(int timeoutMs, ChannelList* activeChannels)
     return now;
 }
 
-void EPollPoller::update(int operation, Channel *channel)
-{
-    epoll_event event;
-    memset(&event, 0, sizeof(event));
-
-    int fd = channel->fd();
-    event.events = channel->events();
-    event.data.fd = fd;
-    event.data.ptr = channel;
-    if(::epoll_ctl(epollfd_, operation, fd, &event) < 0)    // success = 0, errno = -1
-    {
-        if(operation == EPOLL_CTL_DEL)
-        {
-            LOG_ERROR("epoll_ctl del error:%d\n", errno);
-        }
-        else
-        {
-            LOG_FATAL("epoll_ctl del error:%d\n", errno);
-        }
-    }
-}
-
 /**
  *                      EventLoop
  *      ChannelLst                      Poller
@@ -89,7 +67,7 @@ void EPollPoller::update(int operation, Channel *channel)
 void EPollPoller::updateChannel(Channel *channel)
 {
     const int index = channel->index();
-    LOG_INFO("func = %s => fd = %d events = %d index = %d \n", __FUNCTION__, channel->fd(), channel->events(), index);
+    LOG_INFO("func = %s => channel = %p fd = %d events = %d channel index = %d", __FUNCTION__, channel, channel->fd(), channel->events(), index);
     if(index == kNew || index == kDeleted)  // 当前无注册事件
     {
         if(index == kNew)
@@ -117,13 +95,13 @@ void EPollPoller::removeChannel(Channel *channel)
 {
     // fd op
     int fd = channel->fd();
-    channels_.erase(fd);
 
-    LOG_INFO("func = %s => fd = %d \n", __FUNCTION__, fd);
+    LOG_INFO("func = %s => fd = %d", __FUNCTION__, fd);
     int index = channel->index();
     if(index == kAdded)
     {
         update(EPOLL_CTL_DEL, channel);
+        channels_.erase(fd);
     }
     channel->set_index(kNew);   // 重置为初始状态
 }
@@ -135,5 +113,37 @@ void EPollPoller::fillActiveChannels(int numEvents, ChannelList* activeChannels)
         Channel *channel = static_cast<Channel*>(events_[i].data.ptr);
         channel->set_revents(events_[i].events);
         activeChannels->push_back(channel);
+    }
+}
+
+void EPollPoller::update(int operation, Channel *channel)
+{
+    epoll_event event;
+    memset(&event, 0, sizeof(event));
+
+    int fd = channel->fd();
+
+    event.events = channel->events();
+    event.data.fd = fd;
+    event.data.ptr = channel;
+
+    if(::epoll_ctl(epollfd_, operation, fd, &event) < 0)    // success = 0, errno = -1
+    {
+        if (operation == EPOLL_CTL_DEL)
+        {
+            if (errno == ENOENT)
+            {
+                // fd 不在 epoll 实例中，属正常场景，不报错
+                LOG_ERROR("epoll_ctl del fd=%d: already removed or not added", fd);
+            }
+            else
+            {
+                LOG_ERROR("epoll_ctl del fd=%d error:%d (%s)", fd, errno, strerror(errno));
+            }
+        }
+        else
+        {
+            LOG_FATAL("epoll_ctl op=%d fd=%d error:%d (%s)", operation, fd, errno, strerror(errno));
+        }
     }
 }

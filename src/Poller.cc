@@ -5,6 +5,8 @@ Poller::Poller(EventLoop *loop)
 {
 }
 
+Poller::~Poller() = default;
+
 bool Poller::hasChannel(Channel *channel) const
 {
     auto it = channels_.find(channel->fd());

@@ -2,19 +2,34 @@
 
 #include <assert.h>
 #include <sys/epoll.h>
+#include <execinfo.h>
+#include <unistd.h>
 
-static const int kNoneEvent = 0;    
-static const int kReadEvent = EPOLLIN | EPOLLPRI;    
-static const int kWriteEvent = EPOLLOUT;
+const int Channel::kNoneEvent = 0;
+const int Channel::kReadEvent = EPOLLIN | EPOLLPRI;    
+const int Channel::kWriteEvent = EPOLLOUT;
 Channel::Channel(EventLoop *loop, int fd)
-    : loop_(loop), fd_(fd), events_(0), revents_(0), index_(-1),
+    : loop_(loop), 
+      fd_(fd), 
+      events_(0),
+      revents_(0), 
+      index_(-1),
       tied_(false)
-    {}
+    {
+        LOG_INFO("Channel::Channel[%p] fd=%d", this, fd);
+    
+        if (fd <= 2 || fd >= 100000)
+        {
+            void* bt[10];
+            int n = backtrace(bt, 10);
+            fprintf(stderr, "Invalid fd = %d passed to Channel::Channel()\n", fd);
+            backtrace_symbols_fd(bt, n, STDERR_FILENO);
+            // abort();  // 立即终止并打印调用堆栈
+        }
+    }
 
 Channel::~Channel()
 {
-    assert(!tied_);
-
 }
 
 void Channel::tie(const std::shared_ptr<void>& obj)
@@ -41,10 +56,10 @@ void Channel::remove()
 // Define a member function of the Channel class to handle events
 void Channel::handleEvent(Timestamp receiveTime)
 {
+    std::shared_ptr<void> guard;
     if(tied_){
-        // 检查weak_ptr是否仍然有效，如果有效则调用handleEventWithGuard，否则什么也不做
-        // weak_ptr有效返回shared_ptr，否则返回nullptr(空的shared_ptr)
-        std::shared_ptr<void> guard = tie_.lock();
+        // 检查weak_ptr是否仍然有效
+        guard = tie_.lock();
         if(guard){
             handleEventWithGuard(receiveTime);
         }
@@ -55,34 +70,32 @@ void Channel::handleEvent(Timestamp receiveTime)
 
 void Channel::handleEventWithGuard(Timestamp receiveTime)
 {
-    // Log the received event flags for debugging purposes
-    LOG_INFO("channel handleEvent revents:%d", revents_);
-
-    // Check if the hang up event is received and no input event is pending
-    if((revents_ & EPOLLHUP) && !(revents_ & EPOLLIN)){
-        // If a close callback is registered, execute it
-        if(closeCallback_){
+    LOG_DEBUG("channel handleEvent revents:%d", revents_);
+    if((revents_ & EPOLLHUP) && !(revents_ & EPOLLIN))
+    {
+        if(closeCallback_)
+        {
             closeCallback_();
         }
     }
-    // Check if an error event is received
-    if(revents_ & EPOLLERR){
-        // If an error callback is registered, execute it
-        if(errorCallback_){
+    if(revents_ & EPOLLERR)
+    {
+        if(errorCallback_)
+        {
             errorCallback_();
         }
     }
-    // Check if a read or priority read event is received
-    if(revents_ & (EPOLLIN | EPOLLPRI)){
-        // If a read callback is registered, execute it with the receive time
-        if(readCallback_){
+    if(revents_ & (EPOLLIN | EPOLLPRI))
+    {
+        if(readCallback_)
+        {
             readCallback_(receiveTime);
         }
     }
-    // Check if a write event is received
-    if(revents_ & EPOLLOUT){
-        // If a write callback is registered, execute it
-        if(writeCallback_){
+    if(revents_ & EPOLLOUT)
+    {
+        if(writeCallback_)
+        {
             writeCallback_();
         }
     }

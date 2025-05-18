@@ -9,6 +9,7 @@ class InetAddress;
 class Socket : public noncopyable 
 {
 public:
+    Socket() = delete;  
     explicit Socket(int sockfd)
         : sockfd_(sockfd){}
     ~Socket();

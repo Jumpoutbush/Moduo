@@ -21,6 +21,7 @@ public:
     using EventCallback = std::function<void()>;
     using ReadEventCallback = std::function<void(Timestamp)>;    // 只读事件
 
+    Channel() = delete;
     Channel(EventLoop *loop, int fd);       // loop: Channel所属的EventLoop
     ~Channel();
 

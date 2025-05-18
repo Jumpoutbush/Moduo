@@ -28,9 +28,9 @@ private:
     void handleRead();
 
 private:
-    Channel acceptChannel_;
     EventLoop* loop_;
-    Socket acceptSocket_;
+    Socket acceptSocket_;   // socket在channel之前构造
+    Channel acceptChannel_;
     NewConnectionCallback newConnectionCallback_;
     bool listenning_;
 };

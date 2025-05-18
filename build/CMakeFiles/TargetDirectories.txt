@@ -1,3 +1,5 @@
-/home/yyc/wkspace/Moduo/build/CMakeFiles/Moduo.dir
 /home/yyc/wkspace/Moduo/build/CMakeFiles/edit_cache.dir
 /home/yyc/wkspace/Moduo/build/CMakeFiles/rebuild_cache.dir
+/home/yyc/wkspace/Moduo/build/src/CMakeFiles/Moduo.dir
+/home/yyc/wkspace/Moduo/build/src/CMakeFiles/edit_cache.dir
+/home/yyc/wkspace/Moduo/build/src/CMakeFiles/rebuild_cache.dir
